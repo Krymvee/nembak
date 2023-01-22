@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="x-icon"
+        href="https://iconarchive.com/download/i66645/designbolts/free-valentine-heart/Heart.ico">
+    <title>halo!</title>
+</head>
+
+<body style="height: 400px;">
+    <div
+        style="display: flex; align-items: center; flex-direction: column; justify-content: center;">
+
+        <h1>mau gak jadi pacar aku?</h1>
+        <img src="https://i.pinimg.com/originals/0c/da/2f/0cda2f2d00fcdfb94e6efd7aeec005e0.gif"
+            alt="" style="height: 400px;">
+
+    </div>
+    <div style="display: flex; align-items: center; justify-content:center; ">
+        <button id="btn_mau" onclick="alert('I LOVE YOU❤')">mau</button>
+        <button id="btn_gamau" onclick="gamau(this)"
+            style="position: relative; margin-left: 10px;">gak
+            mau</button>
+    </div>
+
+
+</body>
+
+<script>
+    function gamau(id) {
+        var mau = document.getElementById('btn_mau');
+        var i = Math.floor(Math.random() * 300) + 1;
+        var j = Math.floor(Math.random() * 100) + mau.offsetTop;
+        id.style.left = i + "px";
+        id.style.top = j + "px";
+    }
+</script>
+
+</html>
